@@ -1,0 +1,26 @@
+= CIS 3368 Final Exam
+
+== Part 1 (Coding)
+
+1) Run the tests in the file `FinalExamApplicationTests`. Write code (or correct errors) to make
+the tests pass.
+
+[IMPORTANT]
+--
+Do NOT modify the test code in any way! Do not proceed to Problem 2 until all tests pass.
+--
+
+2) Run the application by running `FinalExamApplication`. Write the code required so that when
+a user clicks the `Add Mouse` button, a new mouse is created and added to the list of mice.
+The new mouse should have its name taken from whatever text is in the adjacent text box.
+The new mouse should _not_ be added to the cat.
+
+2) When a mouse is added to the cat, it should be removed from the mice list. Fix the code so that
+the mouse is removed when dragged to the cat.
+
+3) The `Barf!` button currently does nothing. Add code to the application so that the button
+calls the `dropMice` method in the `Cat` class, and then clears the list of mice for the cat (NOT the left
+hand list of unassigned mice).
+
+
+

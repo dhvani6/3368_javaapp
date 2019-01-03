@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="440.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.finalexam.MainController">
+   <children>
+      <ListView fx:id="mouseList" layoutX="67.0" layoutY="118.0" onDragDetected="#onDragDetected" onDragDone="#onDragDone" prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fx:id="catImage" fitHeight="161.0" fitWidth="171.0" layoutX="366.0" layoutY="59.0" onDragDropped="#onDragDropped" onDragOver="#onDragOver" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/cat.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="139.0" layoutY="86.0" prefHeight="17.0" prefWidth="77.0" text="Mice" textAlignment="CENTER" />
+      <ListView fx:id="catMice" layoutX="348.0" layoutY="254.0" prefHeight="128.0" prefWidth="200.0" />
+      <Label layoutX="408.0" layoutY="237.0" text="My Mice" />
+      <Label layoutX="387.0" layoutY="32.0" text="Drag Mice to Me!" />
+      <Button fx:id="btnBarf" layoutX="413.0" layoutY="391.0" mnemonicParsing="false" onAction="#spitOutMice" text="Barf!" />
+      <Button layoutX="46.0" layoutY="355.0" mnemonicParsing="false" onAction="#doAddMouse" prefHeight="27.0" prefWidth="115.0" text="Add Mouse" />
+      <TextField fx:id="mouseName" layoutX="167.0" layoutY="355.0" prefHeight="27.0" prefWidth="131.0" />
+   </children>
+</AnchorPane>
